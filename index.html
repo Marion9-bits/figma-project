@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Figma UI Project</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>UI Dashboard</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#form">Form</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div>
+      <h2>Responsive Interface Project</h2>
+      <p>Built from Figma wireframes using clean HTML, CSS, and JavaScript.</p>
+      <button onclick="openForm()">Open Form</button>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section class="cards">
+    <div class="card">Pixel Accurate Layout</div>
+    <div class="card">Responsive Design</div>
+    <div class="card">Accessible UI</div>
+  </section>
+
+  <!-- Modal Form -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h2>Contact Form</h2>
+
+      <input id="name" type="text" placeholder="Name"/>
+      <input id="email" type="email" placeholder="Email"/>
+      <textarea id="message" placeholder="Message"></textarea>
+
+      <button onclick="submitForm()">Submit</button>
+      <button class="close" onclick="closeForm()">Close</button>
+
+      <p id="error" class="error"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
